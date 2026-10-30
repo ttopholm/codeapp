@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44EFEC6C1EA60530FB903AB7 /* ClaudeAssistantExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5240371C245F6FB26C1D32A /* ClaudeAssistantExtension.swift */; };
+		C455298BA7125458DCE46BC3 /* ClaudeAssistantExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5240371C245F6FB26C1D32A /* ClaudeAssistantExtension.swift */; };
+		11306B7C958F4927E50AFBCA /* ClaudeAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B91EB607E6BD05FDFCF082 /* ClaudeAPIClient.swift */; };
+		FB6DA4BB5BA58FE13D179051 /* ClaudeAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B91EB607E6BD05FDFCF082 /* ClaudeAPIClient.swift */; };
+		3A2248EF8ABE3796CED0C952 /* ClaudeAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68BF5E375D6D77D0402814B /* ClaudeAgent.swift */; };
+		4C09C202972B937FAA4FCDB3 /* ClaudeAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68BF5E375D6D77D0402814B /* ClaudeAgent.swift */; };
+		D55F0325606A4A47330A023F /* ClaudeTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D156E9DF1C098E4552FE3E /* ClaudeTools.swift */; };
+		188C43BCA6BD30E98F96EA59 /* ClaudeTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D156E9DF1C098E4552FE3E /* ClaudeTools.swift */; };
+		F1A3E184D504F207163F48AA /* ClaudeContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9E445241C5DB192220E079 /* ClaudeContainer.swift */; };
+		11734FDB11DA30393F82013E /* ClaudeContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9E445241C5DB192220E079 /* ClaudeContainer.swift */; };
 		940C68252C646E0400089EA3 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940C68242C646E0400089EA3 /* System.swift */; };
 		940C68262C64704C00089EA3 /* String+toCString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949B3CC425DEA89A00BC83B5 /* String+toCString.swift */; };
 		940C68272C65D36700089EA3 /* commandDictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 948D11FF2583F20C008F877A /* commandDictionary.plist */; };
@@ -1406,6 +1416,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E5240371C245F6FB26C1D32A /* ClaudeAssistantExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudeAssistantExtension.swift; sourceTree = "<group>"; };
+		A8B91EB607E6BD05FDFCF082 /* ClaudeAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudeAPIClient.swift; sourceTree = "<group>"; };
+		C68BF5E375D6D77D0402814B /* ClaudeAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudeAgent.swift; sourceTree = "<group>"; };
+		46D156E9DF1C098E4552FE3E /* ClaudeTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudeTools.swift; sourceTree = "<group>"; };
+		5A9E445241C5DB192220E079 /* ClaudeContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudeContainer.swift; sourceTree = "<group>"; };
 		2585773530320C1C003E6820 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2585773C30320C93003E6820 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4F30816829662CBF002708FD /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -2179,6 +2194,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B0D528C425CAEAA451B0B08 /* ClaudeAssistant */ = {
+			isa = PBXGroup;
+			children = (
+				1DB829A05372B0D4CEF7D9C3 /* Views */,
+				E5240371C245F6FB26C1D32A /* ClaudeAssistantExtension.swift */,
+				A8B91EB607E6BD05FDFCF082 /* ClaudeAPIClient.swift */,
+				C68BF5E375D6D77D0402814B /* ClaudeAgent.swift */,
+				46D156E9DF1C098E4552FE3E /* ClaudeTools.swift */,
+			);
+			path = ClaudeAssistant;
+			sourceTree = "<group>";
+		};
+		1DB829A05372B0D4CEF7D9C3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5A9E445241C5DB192220E079 /* ClaudeContainer.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		24509F1455D67D501EFBD28C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -2924,6 +2959,7 @@
 		9F046C3729223CC000BDE4E9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				3B0D528C425CAEAA451B0B08 /* ClaudeAssistant */,
 				9FA122702A8B5A0200E7B417 /* RemoteAuxiliary */,
 				9FA1225E2A8B29E400E7B417 /* MonacoEditor */,
 				9FD0FAF22939AD59007170F5 /* SimpleWebPreview */,
@@ -3633,6 +3669,11 @@
 				94196947280316C7008AAEB2 /* BottomBar.swift in Sources */,
 				94196948280316C7008AAEB2 /* SearchBar.swift in Sources */,
 				9FA122732A8B5A2500E7B417 /* RemoteAuxiliaryExtension.swift in Sources */,
+				44EFEC6C1EA60530FB903AB7 /* ClaudeAssistantExtension.swift in Sources */,
+				11306B7C958F4927E50AFBCA /* ClaudeAPIClient.swift in Sources */,
+				3A2248EF8ABE3796CED0C952 /* ClaudeAgent.swift in Sources */,
+				D55F0325606A4A47330A023F /* ClaudeTools.swift in Sources */,
+				F1A3E184D504F207163F48AA /* ClaudeContainer.swift in Sources */,
 				94196949280316C7008AAEB2 /* Color+init.swift in Sources */,
 				9FA939DE2A9317F800C239BF /* SourceControlTextFieldAlert.swift in Sources */,
 				9FD5BD02292A08D600F20C4B /* AppError.swift in Sources */,
@@ -3827,6 +3868,11 @@
 				94A7FFB3268D085300369147 /* BottomBar.swift in Sources */,
 				94A777D6257B8A88008FE7B2 /* SearchBar.swift in Sources */,
 				9FA122722A8B5A2500E7B417 /* RemoteAuxiliaryExtension.swift in Sources */,
+				C455298BA7125458DCE46BC3 /* ClaudeAssistantExtension.swift in Sources */,
+				FB6DA4BB5BA58FE13D179051 /* ClaudeAPIClient.swift in Sources */,
+				4C09C202972B937FAA4FCDB3 /* ClaudeAgent.swift in Sources */,
+				188C43BCA6BD30E98F96EA59 /* ClaudeTools.swift in Sources */,
+				11734FDB11DA30393F82013E /* ClaudeContainer.swift in Sources */,
 				94B3DDF1260344E800C4F2B1 /* Color+init.swift in Sources */,
 				9FA939DD2A9317F800C239BF /* SourceControlTextFieldAlert.swift in Sources */,
 				9FD5BD01292A08D600F20C4B /* AppError.swift in Sources */,
